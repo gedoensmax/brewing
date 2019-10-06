@@ -1,0 +1,23 @@
+name: 'BeerName'
+sort: 'IPA'
+water:
+  initial: 13 # in liter
+  endresult: 10
+malts:
+  malt_name: 500 # in grams
+  pale-ale: 1000
+hops:
+  hop_name: 15 # in grams
+yeast:
+  yeast_name: 10 # in grams
+malt-process:
+  - time: 10 # in minutes
+    degree: 63 # in degree
+    malt:
+      - 'malt_name'
+hop-process:
+  - time: 10 # in minutes or 'cooldown' or 'coldbrew'
+    degree: 63 # in degree
+    hop:
+      - name: 'hop_name'
+        quantity: 30 #in grams
