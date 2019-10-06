@@ -1,0 +1,39 @@
+name: 'Broken Dreams'
+sort: 'IPA'
+water:
+  initial: 14
+  endresult: 11
+malts:
+  PaleAle: 2000
+  CaraPils: 500
+hops:
+  Centenial: 26 # in grams
+  Mandarin: 40
+yeast:
+  Safale US-05: 6 # in grams
+malt-process:
+  - time: 70 # in minutes
+    degree: 63 # in degree
+    malt:
+      - 'all'
+  - time: 5
+    degree: 73
+  - time: 5
+    degree: 78
+hop-process:
+  - time: 70 # in minutes or 'cooldown' or 'coldbrew'
+    hop:
+      - name: 'Centenial'
+        quantity: 14 #in grams
+  - time: 55
+    hop:
+      - name: 'Centenial'
+        quantity: 12
+  - time: 40
+    hop:
+      - name: 'Mandarin'
+        quantity: 20
+  - time: 'coldbrew'
+    hop:
+      - name: 'Mandarin'
+        quantity: 20

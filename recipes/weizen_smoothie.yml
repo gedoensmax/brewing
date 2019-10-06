@@ -1,0 +1,36 @@
+name: 'Weizen Smoothie'
+sort: 'Weizen'
+water:
+  initial: 20
+  endresult: 17
+malts:
+  Pilsner: 1800
+  Weizen: 1800
+  RoastedBarley: 100
+hops:
+  Tetnanger: 20
+  Hallertauer: 20
+yeast:
+  Safale WB06: 6
+malt-process:
+  - time: 10
+    degree: 50
+    malt:
+      - 'all'
+  - time: 20
+    degree: 63
+  - time: 35
+    degree: 73
+  - time: 10
+    degree: 78
+hop-process:
+  - time: 70
+    hop:
+      - name: 'Tetnanger'
+        quantity: 20
+      - name: 'Hallertauer'
+        quantity: 10
+  - time: 10
+    hop:
+      - name: 'Hallertauer'
+        quantity: 10

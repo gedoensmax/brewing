@@ -1,0 +1,43 @@
+name: 'Hop-Hop rinn in Kopp'
+sort: 'IPA'
+water:
+  initial: 23
+  endresult: 17
+malts:
+  PaleAle: 3000
+  CaraPils: 1000
+hops:
+  Centenial: 50 # in grams
+  Cascade: 95
+yeast:
+  Safale US-05: 11.5 # in grams
+malt-process:
+  - time: 70 # in minutes
+    degree: 63 # in degree
+    malt:
+      - 'all'
+  - time: 5
+    degree: 73
+  - time: 5
+    degree: 78
+hop-process:
+  - time: 70 # in minutes or 'cooldown' or 'coldbrew'
+    hop:
+      - name: 'Centenial'
+        quantity: 25 #in grams
+  - time: 55
+    hop:
+      - name: 'Centenial'
+        quantity: 25
+  - time: 40
+    hop:
+      - name: 'Cascade'
+        quantity: 40
+  - time: 'cooldown'
+    hop:
+      - name: 'Cascade'
+        quantity: 30
+  - time: 'coldbrew'
+    hop:
+      - name: 'Cascade'
+        quantity: 25

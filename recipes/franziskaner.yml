@@ -1,0 +1,45 @@
+name: 'Franziskaner'
+sort: 'IPA'
+water:
+  initial: 17
+  endresult: 15
+malts:
+  PaleAle: 2000
+  Weizen: 1000
+  Bohemian: 250
+hops:
+  Centenial: 35
+  Cascade: 50
+  Mandarin: 25
+yeast:
+  Safale US-05: 6
+malt-process:
+  - time: 70
+    degree: 63
+    malt:
+      - 'all'
+  - time: 5
+    degree: 73
+  - time: 5
+    degree: 78
+hop-process:
+  - time: 70
+    hop:
+      - name: 'Centenial'
+        quantity: 20
+  - time: 55
+    hop:
+      - name: 'Centenial'
+        quantity: 15
+      - name: 'Mandarin'
+          quantity: 15
+  - time: 40
+    hop:
+      - name: 'Cascade'
+        quantity: 30
+  - time: 'cooldown'
+    hop:
+      - name: 'Cascade'
+        quantity: 20
+      - name: 'Mandarin'
+        quantity: 10

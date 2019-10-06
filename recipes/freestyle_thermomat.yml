@@ -1,0 +1,36 @@
+name: 'Freestyle Thermomat'
+sort: 'Imperial Stout'
+water:
+  initial: 7
+  endresult: 6
+malts:
+  CaraPils: 800
+  RoastedBarley: 400
+hops:
+  Cascade: 20
+yeast:
+  Safale US-05: 4 # in grams
+malt-process:
+  - time: 70 # in minutes
+    degree: 63 # in degree
+    malt:
+      - 'all'
+  - time: 5
+    degree: 73
+  - time: 5
+    degree: 78
+hop-process:
+  - time: 40 # in minutes or 'cooldown' or 'coldbrew'
+    hop:
+      - name: 'Cascade'
+        quantity: 10 #in grams
+  - time: 'cooldown'
+    hop:
+      - name: 'Cascade'
+        quantity: 5
+  - time: 'coldbrew'
+    hop:
+      - name: 'Cascade'
+        quantity: 5
+      - name: 'Coffee'
+        quantity: 5
