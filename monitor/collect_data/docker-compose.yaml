@@ -13,7 +13,7 @@ services:
   chronograf:
     image: chronograf
     ports:
-      - 8888:8888
+      - 8080:8888
     volumes:
       - ./config/chronografchronograf:/var/lib/chronograf
     links:
