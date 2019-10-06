@@ -1,4 +1,9 @@
-# ignore mac files 
+# ignore logged data
+
+monitor/collect_data/*_data/
+
+
+# ignore mac files
 .DS_Store
 *.DS_Store
 

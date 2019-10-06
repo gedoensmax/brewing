@@ -23,11 +23,10 @@ services:
     image: telegraf
     privileged: true
     volumes:
-      - ./telegraf/mqtt2influx.conf:/etc/telegraf/telegraf.conf:ro
       - ./config/telegraf.conf:/etc/telegraf/telegraf.conf:ro
     environment:
       - USER=user
-      - INFLUX_URL=influxdb
+      - INFLUX_URL=http://influxdb:8086
       - INFLUX_PASSWORD=password
     links:
       - influxdb
