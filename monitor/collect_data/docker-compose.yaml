@@ -1,0 +1,40 @@
+version: "3.7"
+
+services:
+  influxdb:
+    image: influxdb
+    environment:
+      - INFLUXDB_DB=home
+      - INFLUXDB_USER=user
+      - INFLUXDB_USER_PASSWORD=password
+    volumes:
+      - ./influx_data:/var/lib/influxdb
+
+  chronograf:
+    image: chronograf
+    ports:
+      - 8888:8888
+    volumes:
+      - ./config/chronografchronograf:/var/lib/chronograf
+    links:
+      - influxdb
+
+  telegraf:
+    image: telegraf
+    privileged: true
+    volumes:
+      - ./telegraf/mqtt2influx.conf:/etc/telegraf/telegraf.conf:ro
+      - ./config/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+    environment:
+      - USER=user
+      - INFLUX_URL=influxdb
+      - INFLUX_PASSWORD=password
+    links:
+      - influxdb
+      - mqtt-broker
+
+  mqtt-broker:
+    image: eclipse-mosquitto
+    ports:
+      - 1883:1883
+      - 9001:9001
