@@ -1,0 +1,36 @@
+name: 'Hinterschinken'
+sort: 'Rauchbier'
+water:
+  initial: 15
+  endresult: 10
+malts:
+  Pilsner: 800
+  SmokedBarley: 700
+  CaraRed: 500
+  PaleAle: 500
+hops:
+  Hallertauer: 15
+yeast:
+  Safale US-05: 6
+malt-process:
+  - time: 0
+    degree: 50
+    malt:
+      - 'Pilsner'
+  - time: 30
+    degree: 63
+    malt:
+      - 'rest'
+  - time: 30
+    degree: 73
+  - time: 5
+    degree: 78
+hop-process:
+  - time: 70
+    hop:
+      - name: 'Hallertauer'
+        quantity: 10
+  - time: 10
+    hop:
+      - name: 'Hallertauer'
+        quantity: 5

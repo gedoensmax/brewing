@@ -1,0 +1,46 @@
+name: '???'
+sort: 'IPA'
+water:
+  initial: 23
+  endresult: 17
+malts:
+  PaleAle: 1500
+  CaraRed: 1000
+  Pilsner: 800
+  CrystalMapel: 500
+hops:
+  Centenial: 35
+  Mandarin: 35
+  Cascade: 70
+yeast:
+  Safale US-05: 9 # in grams
+malt-process:
+  - time: 10
+    degree: 50
+    malt:
+      - 'Pilsner'
+  - time: 70
+    degree: 63
+    malt:
+      - 'rest'
+  - time: 10
+    degree: 73
+  - time: 10
+    degree: 78
+hop-process:
+  - time: 70
+    hop:
+      - name: 'Centenial'
+        quantity: 35 #in grams
+  - time: 55
+    hop:
+      - name: 'Mandarin'
+        quantity: 35
+  - time: 30
+    hop:
+      - name: 'Cascade'
+        quantity: 35
+  - time: 'coldbrew'
+    hop:
+      - name: 'Cascade'
+        quantity: 35

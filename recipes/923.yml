@@ -1,0 +1,35 @@
+name: '9/23'
+sort: 'Pils'
+water:
+  initial: 20
+  endresult: 15
+malts:
+  PaleAle: 3000
+  Weizen: 250
+  Bohemian: 70
+hops:
+  Tetnanger: 30 # in grams
+yeast:
+  Saflager S-23: 11.5 # in grams
+malt-process:
+  - time: 0 # in minutes
+    degree: 40 # in degree
+    malt:
+      - 'all'
+  - time: 10
+    degree: 53
+  - time: 40
+    degree: 63
+  - time: 25
+    degree: 73
+  - time: 10
+    degree: 78
+hop-process:
+  - time: 70 # in minutes or 'cooldown' or 'coldbrew'
+    hop:
+      - name: 'Tetnanger'
+        quantity: 20 #in grams
+  - time: 10
+    hop:
+      - name: 'Tetnanger'
+        quantity: 10
