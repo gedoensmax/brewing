@@ -10,12 +10,35 @@ services:
     volumes:
       - ./influx_data:/var/lib/influxdb
 
+#  nginx:
+#    image: nginx:1.15-alpine
+#    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+#    ports:
+#      - "80:80"
+#      - "443:443"
+#    volumes:
+#      - ./config/nginx:/etc/nginx/conf.d
+#      - ./config/certbot/conf:/etc/letsencrypt
+#      - ./config/certbot/www:/var/www/certbot
+#
+#  certbot:
+#    image: certbot/
+#    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+#    volumes:
+#      - ./config/certbot/conf:/etc/letsencrypt
+#      - ./config/certbot/www:/var/www/certbot
+
   chronograf:
-    image: chronograf
+    image: chronograf:alpine
     ports:
-      - 8080:8888
+      - 80:8888
     volumes:
-      - ./config/chronografchronograf:/var/lib/chronograf
+      - ./config/chronograf:/var/lib/chronograf
+    environment:
+      - VIRTUAL_HOST=msquare.dev
+      - VIRTUAL_PORT=8080
+      - LETSENCRYPT_HOST=msquare.dev
+      - LETSENCRYPT_EMAIL=maxi.mueller@me.com
     links:
       - influxdb
 

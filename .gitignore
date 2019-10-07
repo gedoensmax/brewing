@@ -1,6 +1,6 @@
 # ignore logged data
 
-monitor/collect_data/*_data/
+monitor/collect_data/*data/
 
 
 # ignore mac files
