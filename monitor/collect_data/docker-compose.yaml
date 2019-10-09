@@ -26,6 +26,7 @@ services:
       - GH_CLIENT_ID=61b13f1fd9a4c4c20b8d
       - GH_CLIENT_SECRET=3be64b28f665ec73f2f6b9734c50826717b97549
       - GH_ORGS=aalto-exchange
+      - TOKEN_SECRET=maischkesselfluffert
     links:
       - influxdb
     networks:
