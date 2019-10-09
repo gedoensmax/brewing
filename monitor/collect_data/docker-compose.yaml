@@ -9,32 +9,50 @@ services:
       - INFLUXDB_USER_PASSWORD=password
     volumes:
       - ./influx_data:/var/lib/influxdb
+    networks:
+      - influx
 
   chronograf:
-    image: chronograf
+    image: chronograf:alpine
     ports:
-      - 8888:8888
+      - 8080:8888
     volumes:
-      - ./config/chronografchronograf:/var/lib/chronograf
+      - ./config/chronograf:/var/lib/chronograf
+    environment:
+      - VIRTUAL_HOST=beer.msquare.dev
+      - VIRTUAL_PORT=8080
+      - LETSENCRYPT_HOST=beer.msquare.dev
     links:
       - influxdb
+    networks:
+      - influx
+      - proxies
 
   telegraf:
     image: telegraf
     privileged: true
     volumes:
-      - ./telegraf/mqtt2influx.conf:/etc/telegraf/telegraf.conf:ro
       - ./config/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - USER=user
-      - INFLUX_URL=influxdb
+      - INFLUX_URL=http://influxdb:8086
       - INFLUX_PASSWORD=password
     links:
       - influxdb
       - mqtt-broker
+    networks:
+      - influx
 
   mqtt-broker:
     image: eclipse-mosquitto
     ports:
       - 1883:1883
       - 9001:9001
+    networks:
+      - influx
+
+networks:
+  proxies:
+    external: true
+  influx:
