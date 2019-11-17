@@ -1,4 +1,45 @@
-comments: 
+name: 'Vlada!'
+sort: 'Imperial Stout'
+water:
+  initial: 15 # in liter
+  endresult: 14
+malts:
+  pilsner: 1400
+  wheat: 560
+  chocolate: 100
+  crystal: 150
+  black: 60
+  smoked-barley: 100
+  cafe-light: 200
+  cara-ruby: 160
+hops:
+  challenger: 10
+  admiral: 5
+additional:
+  sugar: 200 # in grams
+yeast:
+  yeast_name:
+malt-process:
+  - time: 1
+    degree: 63
+    malt:
+      - 'all'
+  - time: 50
+    degree: 65
+  - time: 15
+    degree: 71
+  - time: 10
+    degree: 76
+hop-process:
+  - time: 80
+    hop:
+      - name: 'challenger'
+        quantity: 10
+  - time: 60
+    hop:
+      - name: 'admiral'
+        quantity: 5
+comments:
   - knallt halt 
   - stark nachgefüttert 
   - dünne schaumbildung 

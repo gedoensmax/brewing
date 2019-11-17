@@ -1,0 +1,35 @@
+name: 'Rudolf- the red cap'
+sort: 'Weizen'
+water:
+  initial: 20
+  endresult: 17
+malts:
+  Pilsner: 1000
+  Weizen: 2000
+  munich-light: 1000
+  cara-ruby: 100
+hops:
+  mandarina-bavaria: 30
+  hallertauer: 20
+yeast:
+  bavarian-wheat: 11
+malt-process:
+  - time: 70
+    degree: 60
+    malt:
+      - 'all'
+  - time: 20
+    degree: 63
+  - time: 20
+    degree: 73
+  - time: 10
+    degree: 78
+hop-process:
+  - time: 70
+    hop:
+      - name: 'hallertauer'
+        quantity: 20
+  - time: 10
+    hop:
+      - name: 'mandarina-bavaria'
+        quantity: 30

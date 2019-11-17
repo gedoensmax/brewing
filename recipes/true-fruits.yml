@@ -1,0 +1,48 @@
+name: 'true fruits'
+sort: 'IPA'
+water:
+  initial: 20
+  endresult: 16
+malts:
+  pale-ale: 2000
+  dextrin: 700
+  cara-red: 300
+  cara-bohemian: 400
+hops:
+  citra: 35
+  amarillo: 45
+  el-dorado: 40
+yeast:
+  empire-ale: 11.5 # in grams
+malt-process:
+  - time: 70
+    degree: 63
+    malt:
+      - 'all'
+  - time: 5
+    degree: 73
+  - time: 10
+    degree: 78
+hop-process:
+  - time: 70
+    hop:
+      - name: 'citra'
+        quantity: 25
+  - time: 40
+    hop:
+      - name: 'citra'
+        quantity: 5
+      - name: 'amarillo'
+        quantity: 15
+  - time: 20
+    hop:
+      - name: 'citra'
+        quantity: 5
+      - name: 'el-dorado'
+        quantity: 10
+  - time: 'coldbrew'
+    hop:
+      - name: 'amarillo'
+        quantity: 30
+      - name: 'el-dorado'
+        quantity: 30

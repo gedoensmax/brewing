@@ -1,0 +1,43 @@
+name: 'Jingle beer'
+sort: 'IPA'
+water:
+  initial: 15 # in liter
+  endresult: 12
+malts:
+  cara-red: 635
+  cafe-light: 375
+  pilsner: 500
+  pale-ale: 1500
+hops:
+  tettnanger: 15
+  hall-tradition: 25
+  cascade: 40
+additional:
+  honey: 200 # grams
+  cinnamon: 3 # sticks
+  # additional glühwein gewürz
+yeast:
+  yeast_name: mead
+malt-process:
+  - time: 70
+    degree: 63 # in degree
+    malt:
+      - 'all'
+  - time: 5
+    degree: 68
+  - time: 10
+    degree: 75
+hop-process:
+  - time: 70
+    hop:
+      - name: 'tettnanger'
+        quantity: 15
+      - name: 'hall-tradition'
+        quantity: 25
+  - time: 40
+    hop:
+      - name: 'cascade'
+        quantity: 40
+comments:
+  - zuviel zimt
+  - zu lange ziehen lassen

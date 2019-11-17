@@ -1,4 +1,41 @@
-comments: 
+name: 'Schizophrenie'
+sort: 'Pilsner'
+water:
+  initial: 22
+  endresult: 17
+malts:
+  pilsner: 2800
+  cara-clair: 300
+  cara-red: 200
+  cara-rye: 200
+hops: # estimates
+  magnum: 10
+  northern-brewer: 15
+yeast:
+  bohemian-lager: 16 # in grams
+malt-process:
+  - time: 1
+    degree: 40
+    malt:
+      - 'all'
+  - time: 10
+    degree: 53
+  - time: 40
+    degree: 63
+  - time: 25
+    degree: 73
+  - time: 10
+    degree: 78
+hop-process:
+  - time: 70
+    hop:
+      - name: 'northern-brewer'
+        quantity: 15
+  - time: 30
+    hop:
+      - name: 'magnum'
+        quantity: 10
+comments:
   - wunderbare farbe eventuell touch gold rein 
   - nicht wirklich pils 
   - mehr filtern 

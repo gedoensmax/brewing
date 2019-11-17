@@ -6,7 +6,7 @@ water:
 malts:
   wheat: 730 
   crystal: 550
-  roasted-barly: 200
+  roasted-barley: 200
   cara-bohemian: 320
   pale-ale: 2000
 hops:
@@ -15,7 +15,7 @@ hops:
   cascade: 30
   amarillo: 30
 yeast:
-  yeast_name:  
+  yeast_name:
 malt-process:
   - time: 70
     degree: 63 # in degree
@@ -26,7 +26,7 @@ malt-process:
   - time: 10
     degree: 75
 hop-process:
-  - time: 70 
+  - time: 70
     hop:
       - name: 'tettnanger'
         quantity: 20
@@ -40,11 +40,11 @@ hop-process:
         quantity: 30
       - name: 'amarillo'
         quantity: 10
-  - time: 20 
+  - time: 20
     hop:
-      - name: 'amarillo'
-        quantity: 20
-comments: 
+    - name: 'amarillo'
+      quantity: 20
+comments:
   - top schaum 
   - knallt 
   - schön dunkel 

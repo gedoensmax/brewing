@@ -1,4 +1,40 @@
-comments: 
+name: 'rc-Pils'
+sort: 'pilsner'
+water:
+  initial: 20
+  endresult: 15
+malts:
+  pilsner: 3000
+  wheat: 300
+  dextrin: 200
+hops: # estimates
+  magnum: 15
+  tettnanger: 15
+yeast:
+  bohemian-lager: 20 # in grams
+malt-process:
+  - time: 1
+    degree: 40
+    malt:
+      - 'all'
+  - time: 10
+    degree: 53
+  - time: 40
+    degree: 63
+  - time: 25
+    degree: 73
+  - time: 10
+    degree: 78
+hop-process:
+  - time: 70 # in minutes or 'cooldown' or 'coldbrew'
+    hop:
+      - name: 'magnum'
+        quantity: 15
+  - time: 20
+    hop:
+      - name: 'tettnanger'
+        quantity: 15
+comments:
   - wumms in flaschen 
   - sehr hell 
   - limonadenfarbe 
