@@ -1,3 +1,49 @@
+name: 'Turbo Dunkel'
+sort: 'IPA'
+water:
+  initial: 18 # in liter
+  endresult: 15
+malts:
+  wheat: 730 
+  crystal: 550
+  roasted-barly: 200
+  cara-bohemian: 320
+  pale-ale: 2000
+hops:
+  tettnanger: 20 
+  hall-tradition: 25
+  cascade: 30
+  amarillo: 30
+yeast:
+  yeast_name:  
+malt-process:
+  - time: 70
+    degree: 63 # in degree
+    malt:
+      - 'all'
+  - time: 5
+    degree: 68
+  - time: 10
+    degree: 75
+hop-process:
+  - time: 70 
+    hop:
+      - name: 'tettnanger'
+        quantity: 20
+  - time: 50
+    hop:
+      - name: 'hall-tradition'
+        quantity: 25
+  - time: 40
+    hop:
+      - name: 'cascade'
+        quantity: 30
+      - name: 'amarillo'
+        quantity: 10
+  - time: 20 
+    hop:
+      - name: 'amarillo'
+        quantity: 20
 comments: 
   - top schaum 
   - knallt 
