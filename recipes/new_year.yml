@@ -1,0 +1,37 @@
+name: 'New year'
+sort: 'IPA'
+water:
+  initial: 13
+  endresult: 18
+malts:
+  PaleAle: 3000
+  Wheat: 500
+  Arome: 500
+  CaraClair: 100
+hops:
+  Ndeavor: 65
+  ElDorado: 40
+  Challenger: 15
+yeast:
+  EmpireAle: 10 
+malt-process:
+  - time: 70 # in minutes
+    degree: 63 # in degree
+    malt:
+      - 'all'
+  - time: 10
+    degree: 73
+  - time: 10
+    degree: 78
+hop-process:
+  - time: 70 
+    hop:
+      - name: 'Endeavor'
+        quantity: 65 
+  - time: 35
+    hop:
+      - name: 'ElDorado'
+        quantity: 40
+      - name: 'Challenger'
+        quantity: 15
+      
