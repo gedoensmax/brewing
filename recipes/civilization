@@ -1,0 +1,32 @@
+name: 'Civilization Brew'
+sort: 'Weizen'
+water:
+  initial: 14
+  endresult: 18
+malts:
+  Weizen: 3250
+  Oat: 320
+  Rye: 600
+  MunichLight: 300
+hops:
+  Cluster: 40 
+yeast:
+  BelgianWit: 11
+malt-process:
+  - time: 10
+    degree: 55
+    malt:
+      - 'all'
+  - time: 15
+    degree: 63
+  - time: 35
+    degree: 73
+  - time: 20
+    degree: 78
+hop-process:
+  - time: 70
+    hop:
+      - name: 'Tetnanger'
+        quantity: 20
+      - name: 'Hallertauer'
+        quantity: 10
