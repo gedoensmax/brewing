@@ -1,4 +1,4 @@
-name: 'WheatEver'
+name: 'A+energy'
 sort: 'IPA'
 water:
   initial: 13
@@ -10,7 +10,7 @@ malts:
 hops:
   Admiral: 100 # in grams
   Challenger: 40
-  Mate: 15
+  Mate: 30
 yeast:
   BelgianAle: 6 # in grams
 malt-process:
@@ -34,7 +34,7 @@ hop-process:
   - time: 10
     hop:
       - name: 'Mate'
-        quantity: 15
+        quantity: 30
   - time: 'coldbrew'
     hop:
       - name: 'Admiral'
