@@ -40,9 +40,9 @@ hop-process:
       - name: 'admiral'
         quantity: 5
 comments:
-  - knallt halt 
-  - stark nachgefüttert 
-  - dünne schaumbildung 
-  - weich im abgang 
+  - knallt halt
+  - stark nachgefüttert
+  - dünne schaumbildung
+  - weich im abgang
   - leichter kaffeegeschmack mit hauch cognac note
   

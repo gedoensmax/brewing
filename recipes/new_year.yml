@@ -13,7 +13,7 @@ hops:
   ElDorado: 40
   Challenger: 15
 yeast:
-  EmpireAle: 10 
+  EmpireAle: 10
 malt-process:
   - time: 70 # in minutes
     degree: 63 # in degree
@@ -24,10 +24,10 @@ malt-process:
   - time: 10
     degree: 78
 hop-process:
-  - time: 70 
+  - time: 70
     hop:
       - name: 'Endeavor'
-        quantity: 65 
+        quantity: 65
   - time: 35
     hop:
       - name: 'ElDorado'

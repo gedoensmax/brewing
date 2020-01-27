@@ -9,7 +9,7 @@ malts:
   Rye: 600
   MunichLight: 300
 hops:
-  Cluster: 40 
+  Cluster: 40
 yeast:
   BelgianWit: 11
 malt-process:

@@ -1,0 +1,41 @@
+name: 'WheatEver'
+sort: 'IPA'
+water:
+  initial: 13
+  endresult: 20
+malts:
+  PaleAle: 2000
+  Pilsner: 800
+  Arome: 400
+hops:
+  Admiral: 100 # in grams
+  Challenger: 40
+  Mate: 15
+yeast:
+  BelgianAle: 6 # in grams
+malt-process:
+  - time: 70 # in minutes
+    degree: 63 # in degree
+    malt:
+      - 'all'
+  - time: 10
+    degree: 73
+  - time: 15
+    degree: 78
+hop-process:
+  - time: 70
+    hop:
+      - name: 'Admiral'
+        quantity: 50
+  - time: 50
+    hop:
+      - name: 'Challenger'
+        quantity: 40
+  - time: 10
+    hop:
+      - name: 'Mate'
+        quantity: 15
+  - time: 'coldbrew'
+    hop:
+      - name: 'Admiral'
+        quantity: 50

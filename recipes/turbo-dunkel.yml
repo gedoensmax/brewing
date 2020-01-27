@@ -4,13 +4,13 @@ water:
   initial: 18 # in liter
   endresult: 15
 malts:
-  wheat: 730 
+  wheat: 730
   crystal: 550
   roasted-barley: 200
   cara-bohemian: 320
   pale-ale: 2000
 hops:
-  tettnanger: 20 
+  tettnanger: 20
   hall-tradition: 25
   cascade: 30
   amarillo: 30
@@ -42,11 +42,11 @@ hop-process:
         quantity: 10
   - time: 20
     hop:
-    - name: 'amarillo'
-      quantity: 20
+      - name: 'amarillo'
+        quantity: 20
 comments:
-  - top schaum 
-  - knallt 
-  - schön dunkel 
-  - sanfter geschmack sehr rund 
+  - top schaum
+  - knallt
+  - schön dunkel
+  - sanfter geschmack sehr rund
   - im abgang ganz leicht säuerlich 

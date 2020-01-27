@@ -1,5 +1,5 @@
 name: 'rc-Pils'
-sort: 'pilsner'
+sort: 'Pilsner'
 water:
   initial: 20
   endresult: 15
@@ -35,8 +35,8 @@ hop-process:
       - name: 'tettnanger'
         quantity: 15
 comments:
-  - wumms in flaschen 
-  - sehr hell 
-  - limonadenfarbe 
-  - leichter geschmack aber gute bitterkeit 
+  - wumms in flaschen
+  - sehr hell
+  - limonadenfarbe
+  - leichter geschmack aber gute bitterkeit
   - note von weinbergpfirsisch 

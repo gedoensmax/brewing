@@ -1,0 +1,38 @@
+name: 'Pils 1.0 (stable)'
+sort: 'Pilsner'
+water:
+  initial: 20
+  endresult: 18
+malts:
+  pilsner: 3000
+  cara-red: 250
+  dextrin: 300
+  wheat: 200
+hops:
+  magnum: 10
+  tettnanger: 5
+  admiral: 8
+yeast:
+  bohemian-lager: 16
+malt-process:
+  - time: 1
+    degree: 45
+    malt:
+      - 'all'
+  - time: 25
+    degree: 55
+  - time: 30
+    degree: 63
+  - time: 20
+    degree: 73
+hop-process:
+  - time: 70
+    hop:
+      - name: 'magnum'
+        quantity: 10
+      - name: 'tettnanger'
+        quantity: 5
+  - time: 30 # additional 30 min in cooldown process
+    hop:
+      - name: 'admiral'
+        quantity: 8
