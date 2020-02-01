@@ -1,0 +1,29 @@
+name: 'Pils mit Felix'
+sort: 'Pilsner'
+water:
+  initial: 13
+  endresult: 18
+malts:
+  pilsner: 3200
+  munich: 600
+  caraclair: 400
+hops:
+  perle: 30
+yeast:
+  saflager: 1
+malt-process:
+  - time: 1
+    degree: 45
+    malt:
+      - 'all'
+  - time: 40
+    degree: 63
+  - time: 25
+    degree: 73
+  - time: 15
+    degree: 78
+hop-process:
+  - time: 70
+    hop:
+      - name: 'perle'
+        quantity: 30
