@@ -1,0 +1,35 @@
+name: 'Klausurenphase'
+sort: 'IPA'
+water:
+  initial: 14
+  endresult: 19
+malts:
+  Munich: 800
+  PaleAle: 2200
+  Wheat: 800
+  CaraClair: 400
+hops:
+  Endeavor: 40
+  Mandarina: 80
+yeast:
+  FrenchSaison: 11.5 # in grams
+malt-process:
+  - time: 70
+    degree: 63
+    malt:
+      - 'all'
+  - time: 15
+    degree: 73
+  - time: 20
+    degree: 78
+hop-process:
+  - time: 70
+    hop:
+      - name: 'Endeavor'
+        quantity: 40 
+      - name: 'Mandarina'
+        quantity: 20
+  - time: 40
+    hop:
+      - name: 'Mandarina'
+        quantity: 60
