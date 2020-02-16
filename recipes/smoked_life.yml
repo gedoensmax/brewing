@@ -1,0 +1,30 @@
+name: 'Smoked Life'
+sort: 'Weizen'
+water:
+  initial: 14
+  endresult: 18
+malts:
+  Pilsner: 800
+  Weizen: 700
+  Munich: 1000
+  Smoked: 1000
+hops:
+  NorthernBrewer: 55
+yeast:
+  BavarianWheat: 11
+malt-process:
+  - time: 5
+    degree: 40
+    malt:
+      - 'all'
+  - time: 40
+    degree: 63
+  - time: 25
+    degree: 73
+  - time: 20
+    degree: 78
+hop-process:
+  - time: 70
+    hop:
+      - name: 'NorthernBrewer'
+        quantity: 55
